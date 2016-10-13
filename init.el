@@ -130,3 +130,6 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+
+;; add my key setting~
+(load "mysetting.el")
