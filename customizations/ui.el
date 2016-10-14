@@ -69,3 +69,9 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+
+;; 设置窗体透明
+
+(set-frame-parameter (selected-frame) 'alpha (list 85 50))
+(add-to-list 'default-frame-alist (cons 'alpha (list 85 50)))
