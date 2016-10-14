@@ -51,3 +51,8 @@
 (global-set-key (kbd "<kp-down>") 'move-line-down)
 (global-set-key (kbd "C-<kp-home>") 'copy-line)
 (global-set-key (kbd "C-<kp-prior>") 'yank)
+
+
+(global-set-key (kbd "C-<next>") '4clojure-next-question)
+(global-set-key (kbd "C-<prior>") '4clojure-previous-question)
+(global-set-key (kbd "C-<return>") '4clojure-check-answers)
