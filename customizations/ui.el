@@ -4,9 +4,8 @@
 ;; a matter of preference and may require some fiddling to match your
 ;; preferences
 
-;; Turn off the tool-bar at the top of each frame because it's agly
-(tool-bar-mode -1)
 ;; Turn off the menu bar at the top of each frame because it's distracting
+(tool-bar-mode -1)
 (menu-bar-mode -1)
 
 ;; Show line numbers
@@ -36,7 +35,7 @@
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
-;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 177) (height . 53)))
+ (setq initial-frame-alist '((top . 0) (left . 1) (width . 142) (height . 39)))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
@@ -69,9 +68,6 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
-
-
-;; 设置窗体透明
 
 (set-frame-parameter (selected-frame) 'alpha (list 85 50))
 (add-to-list 'default-frame-alist (cons 'alpha (list 85 50)))
